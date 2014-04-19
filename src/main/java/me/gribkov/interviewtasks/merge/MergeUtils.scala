@@ -35,8 +35,8 @@ object MergeUtils {
           if (h1 < h2) mergeImpl(t1, in2, h1 :: result)
           else mergeImpl(in1, t2, h2 :: result)
 
-        case (Nil, nel) => nel ::: result
-        case (nel, Nil) => nel ::: result
+        case (Nil, nel) => nel.reverse ::: result
+        case (nel, Nil) => nel.reverse ::: result
       }
 
     mergeImpl(in1, in2, Nil).reverse
