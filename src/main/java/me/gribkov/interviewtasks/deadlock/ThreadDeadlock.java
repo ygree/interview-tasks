@@ -3,7 +3,7 @@
  * http://gribkov.me/
  */
 
-package me.gribkov.interviewtask.deadlock;
+package me.gribkov.interviewtasks.deadlock;
 
 /**
  * Once, on interview I was asked to write java code that ends up with deadlock.
